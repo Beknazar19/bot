@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <link rel="stylesheet" href="style.css">  
+   <title>Bot valuta-obmen</title>
+
+</head>
+
+<body>
+   <div class="container">
+       <div class="column">
+           <label for="column1" >Покупаю</label>
+           <br> 
+           <select class="select" id="select_group_1">
+               <option value="1" selected="selected">доллар</option>
+               <option value="5">сом</option>
+               <option value="2">евро</option>
+               <option value="3">рубль</option>
+               <option value="6">тенге</option>
+               <option value="7">сум</option>
+               <option value="4">лирa</option>
+           </select>
+           <br>
+           <select class="select" id="select_group_2">
+               <option value="3">все</option>
+               <option value="1">наличка</option>
+               <option value="2">карта</option>
+           </select>
+           <br>
+           <select class="select" id="select_group_3">
+               <option value="3">все</option>
+               <option value="1">без печати</option>
+               <option value="2">с печатью</option>
+           </select>
+
+           <br>
+           <td></td>
+           <td >
+               <label for="kurs">
+                   По курсу
+                   <input 
+                    id="kurs" 
+                    type="tel"
+                    class = "select"  
+                   type="number"
+                   >
+               </label>
+           </td>
+           <td>
+               <label for="summary" id="Label_Sum">
+                   Объем, в дол
+               </label>
+               <input class = "select" 
+                    id="summary" type="tel" >
+               
+           </td>
+
+       </div>
+       <div class="column">
+           <label for="column2">Продаю</label>
+           <br>
+           <select class="select" id="select_group_4">
+               <option value="1">доллар</option>
+               <option value="5" selected="selected">сом</option>
+               <option value="2">евро</option>
+               <option value="3">рубль</option>
+               <option value="6">тенге</option>
+               <option value="7">сум</option>
+               <option value="4">лирa</option>
+           </select>
+           <br>
+           <select class="select" id="select_group_5">
+               <option value="3">все</option>
+               <option value="1">наличка</option>
+               <option value="2">карта</option>
+           </select>
+           <br>
+           <select class="select" id="select_group_6">
+               <option value="3">все</option>
+               <option value="1">без печати</option>
+               <option value="2">с печатью</option>
+           </select>
+           <td>
+            <label class="select" for="select-group_7">
+                Место
+                <select id="select-group 7">
+                    <option value="14">все</option>
+                    <option value="1">Бишкек</option>
+                    <option value="2">Ош</option>
+                    <option value="3">Дж-Абад</option>
+                    <option value="4">Кара-Суу</option>
+                    <option value="5">Токмок</option>
+                    <option value="6">Кызыл-Кия</option>
+                    <option value="7">Узген</option>
+                    <option value="8">Каракол</option>
+                    <option value="9">Кара-Балта</option>
+                    <option value="10">Сузак</option>
+                    <option value="11">Нарын</option>
+                    <option value="12">Талас</option>
+                    <option value="13">другое</option>
+                    
+                </select>
+            </label>
+        </td>
+       </div>
+   </div>
+</body>
+
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+
+}
+div.column {
+    width: 140px;
+    height: 300px;
+    text-align: center;
+    margin: 1%;
+
+    position: relative
+}
+.select {
+    width: 100px;
+    height: 25px;
+}
+select {
+    margin-bottom: 10px;
+}
